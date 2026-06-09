@@ -11,11 +11,11 @@ app.use(bodyParser.json());
 
 app.get("/usuario", function(req, res) {
   let salida = {
-    nombre: "fernando",
-    edad: 32,
+    nombre: "Johnny Axel",
+    edad: 13,
     url: req.url
   };
-  res.json("Hola mundo");
+  res.json("Hello Tecnobrothers");
 });
 
 app.post("/usuario", function(req, res) {
@@ -35,11 +35,11 @@ app.put("/usuario/:id", function(req, res) {
 
 app.delete("/usuario", function(req, res) {
   let salida = {
-    nombre: "fernando",
-    edad: 32,
+    nombre: "Johnny Axel",
+    edad: 20,
     url: req.url
   };
-  res.json("Hola mundo");
+  res.json("Hello Globaltech");
 });
 
 app.listen(process.env.PORT, () => {
